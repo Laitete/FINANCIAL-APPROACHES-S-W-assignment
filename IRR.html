@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Rate of Return (IRR)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Internal Rate of Return (IRR)</h1>
+    </header>
+    <div class="form-container">
+        <form id="irr-form">
+            <label>
+                <p>Cash Flows:</p>
+                <input type="text" id="cashFlowsIRR" placeholder="Comma separated values" required>
+            </label>
+            <label>
+                <p>Initial Guess for IRR:</p>
+                <input type="number" id="initialGuess" placeholder="Optional" step="0.01">
+            </label>
+            <button type="button" onclick="calculateIRR()">Calculate</button>
+        </form>
+        <div id="irr-result"></div>
+    </div>
+</body>
+</html>

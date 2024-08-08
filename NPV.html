@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net Present Value (NPV)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Net Present Value (NPV)</h1>
+    </header>
+    <div class="form-container">
+        <form id="npv-form">
+            <label>
+                <p>Cash Flows:</p>
+                <input type="text" id="cashFlows" placeholder="Comma separated values" required>
+            </label>
+            <label>
+                <p>Discount Rate:</p>
+                <input type="number" step="0.01" id="discountRate" required>
+            </label>
+            <label>
+                <p>Initial Investment:</p>
+                <input type="number" id="initialInvestment" required>
+            </label>
+            <button type="button" onclick="calculateNPV()">Calculate</button>
+        </form>
+        <div id="npv-result"></div>
+    </div>
+</body>
+</html>

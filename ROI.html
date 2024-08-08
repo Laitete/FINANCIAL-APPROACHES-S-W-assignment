@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return on Investment (ROI)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Return on Investment (ROI)</h1>
+    </header>
+    <div class="form-container">
+        <form id="roi-form">
+            <label>
+                <p>Gain:</p>
+                <input type="number" id="gain" required>
+            </label>
+            <label>
+                <p>Cost:</p>
+                <input type="number" id="cost" required>
+            </label>
+            <button type="button" onclick="calculateROI()">Calculate</button>
+        </form>
+        <div id="roi-result"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payback Period</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Payback Period</h1>
+    </header>
+    <div class="form-container">
+        <form id="payback-form">
+            <label>
+                Investment:
+                <input type="number" id="investment" required>
+            </label>
+            <label>
+                Annual Return:
+                <input type="number" id="annualReturn" required>
+            </label>
+            <button type="button" onclick="calculatePayback()">Calculate</button>
+        </form>
+        <div id="payback-result"></div>
+    </div>
+    
+</body>
+</html>
